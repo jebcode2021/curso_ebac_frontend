@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form>
+        <input type="text" name="name" placeholder="Digite seu nome">
+        <br />
+        <input type="email" name="email" placeholder="Digite seu e-mail">
+        <br />
+        <input type="tel" name="phone" placeholder="Digite seu telefone">
+        <br />
+        <input type="number" max="10" min="2" step="2">
+        <br />
+        <input type="file" name="file" accept=".pdf,.doc,.docx">
+        <br />
+        <input type="color" name="color">
+        <br />
+        <input type="checkbox" id="checkbox-termos">
+        <label for="checkbox-termos">Aceito os termos e condições</label>
+        <br />
+        <p>
+            Qual sua cor favorita?
+        </p>
+        <input type="radio" name="cor-favorita" id="cor-vermelho" name="vermelho"> <label for="cor-vermelho">Vermelho</label>
+        <input type="radio" name="cor-favorita" id="cor-verde" name="verde"> <label for="cor-verde">Verde</label>
+        <input type="radio" name="cor-favorita" id="cor-azul" name="azul"> <label for="cor-azul">Azul</label>
+        <br />
+        <label>Qual seu filme favorito?</label>
+        <select name="filme-favorito" multiple>
+            <option value="1">The Flash</option>
+            <option value="2">Super-man</option>
+            <option value="3">Batman</option>
+        </select>
+        <br />
+        <textarea name="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+        <br />
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>    
+</body>
+</html>
