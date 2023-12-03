@@ -8,7 +8,6 @@ form.addEventListener('submit', function(e) {
     const mensagemCamposInvalidos = `O valor do campo A <b>${camposA.value}</b> é menor que o valor do campo B <b>${camposB.value}</b> são inválidos`;
     const mensagemCamposValido = `O valor do campo B <b>${camposB.value}</b> é maior que o valor do campo A <b>${camposA.value}</b> são válidos`;
 
-   
     const valorA = parseFloat(camposA.value);
     const valorB = parseFloat(camposB.value);
 
