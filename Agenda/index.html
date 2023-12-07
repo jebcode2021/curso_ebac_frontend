@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auxiliar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header class="base-topo">
+        <div class="conteudo">
+            <a href="https://jebcode.com.br/campus/" class="logo"></a>
+
+            <ul class="menu-topo usuario">
+                <li class="user">
+                    <a href="" class="nomes">Jonathan Euzébio Boza</a>
+                    <div class="thumb">
+                        <img src="https://jebcode.com.br//upload/alunos/user-alt.svg" alt="img" class="img-fluido">
+                    </div>
+                    <ul class="menu-topo">
+                        <li class="submenu">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="#fff" width="15">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+                                </svg> Sair</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="base-home">
+        <div class="conteudo">
+            <div class="base-caixa">
+
+                <div class="caixa-center teste">
+
+                    <div class="caixa-webcam">
+                        <h2 class="texto-branco">Webcam</h2>
+                        <div class="base caixa-video">
+                            <video id="camera" autoplay></video>
+                            <div class="subcamera">
+                                <video id="subcamera" autoplay></video>
+                            </div>
+                        </div>
+                        <div class="caixa-botoes-center border-branco">
+                            <div class="botoes">
+                                <button id="tirar-foto-button">Tirar Foto</button>
+                                <button id="on-camera-button">Ligar Câmera</button>
+                                <button id="start-button">Iniciar Gravar</button>
+                                <button id="stop-button">Parar Gravar</button>
+                                <button id="on-audio-button">Ligar Audio</button>
+                                <button id="chat-button">Chat</button>
+                                <button id="opcoes-button">Opções</button>
+                            </div>
+                        </div>
+
+                        <div class="caixa-chat">
+                            <h2 class="texto-branco">Chat</h2>
+                            <div class="base">
+                                <div class="caixa-mensagens">
+                                    <div class="base-flex">
+                                        <div class="aluno">
+                                            <div class="mensagem-aluno">
+                                                <div class="thumb-aluno">
+                                                    <img src="img/Jeb.jpg" alt="img" class="img-fluido">
+                                                        alt="img" class="img-fluido">
+                                                </div>
+                                                <div class="texto">
+                                                    <strong class="nome texto-branco">Jonathan Euzébio Boza - <span
+                                                            class="data texto-branco"> 10/10/2021 -
+                                                            <small>ALUNO</small></span>
+                                                    </strong>
+
+                                                    <p class="texto-branco">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing
+                                                        elit. Quisquam
+                                                        voluptatum
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="admin">
+                                            <div class="mensagem-admin">
+                                                <div class="thumb-admin">
+                                                    <img src="https://jebcode.com.br//upload/alunos/user-alt.svg"
+                                                        alt="img" class="img-fluido">
+                                                </div>
+                                                <div class="texto">
+                                                    <strong class="nome texto-branco">Jonathan Euzébio Boza - <span
+                                                            class="data texto-branco"> 10/10/2021</span> -
+                                                        <small>ADMIN</small></strong>
+
+                                                    <p class="texto-branco">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing
+                                                        elit. Quisquam
+                                                        voluptatum
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="texto-branco">Mensagem</h2>
+
+                            <div class="caixa-textarea">
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <div class="botoes-enviar">
+                                    <button>Enviar Mensagem</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="caixa">
+                        <h2>Adicionar de contato</h2>
+                        <div class="caixa-border">
+                            <div class="base">
+                                <div class="icone">
+                                    <img src="img/Jeb.jpg" alt="img" class="img-fluido">
+                                </div>
+                                <div class="texto">
+                                    <strong class="nome">Aluno: Jonathan Euzébio Boza</strong>
+                                    <span class="email"> E-mail: jebcode@jebcode.com.br</span>
+                                </div>
+                            </div>
+                            <button>Adicionar Fila</button>
+                            <button>Liberar Certificado</button>
+                        </div>
+
+                        <div class="caixa-border">
+                            <div class="base">
+                                <div class="icone">
+                                    <img src="https://jebcode.com.br//upload/alunos/user-alt.svg" alt="img"
+                                        class="img-fluido">
+                                </div>
+                                <div class="texto">
+                                    <strong class="nome">Aluno: Denise Machado Boza</strong>
+                                    <span class="email"> E-mail: denise@jebcode.com.br</span>
+                                </div>
+                            </div>
+                            <button>Adicionar Fila</button>
+                            <button>Liberar Certificado</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="caixa tabela-top">
+                    <h2>Esperar Fila</h2>
+                    <div class="caixa-tabela">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <thead >
+                                <tr>
+                                    <th align="center">Fila</th>
+                                    <th align="center">Póximo</th>
+                                    <th align="center">Concluir</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td align="center">2°</td>
+                                    <td align="center"><a>Próximo</a></td>
+                                    <td align="center"><a>1 Concluir</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function (stream) {
+                var video = document.getElementById('camera');
+                video.srcObject = stream;
+                video.play();
+            })
+            .catch(function (error) {
+                console.log('Error accessing camera:', error);
+            });
+
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function (stream) {
+                var video = document.getElementById('subcamera');
+                video.srcObject = stream;
+                video.play();
+            })
+            .catch(function (error) {
+                console.log('Error accessing camera:', error);
+            });
+
+    </script>
+
+    <script>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,684 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #860813;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #444;
+}
+
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+.base-topo {
+    background-color: #860813;
+    padding: 16px 0 0;
+    border-bottom: 1px solid #860813;
+    color: #fff;
+    margin-bottom: 56px;
+}
+
+.conteudo {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+
+.base-topo .conteudo .menu-topo {
+    display: flex;
+    align-items: center;
+}
+
+
+.base-topo .conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.base-topo .logo {
+    background: url(https://jebcode.com.br/campus/assets/campus/img/logo3.png) no-repeat;
+    background-size: contain;
+    display: block;
+    height: 49px;
+    width: 170px;
+}
+
+.base-topo .thumb {
+    display: block;
+    height: 49px;
+    width: 50px;
+}
+
+.base-topo .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 8px;
+}
+
+.base-topo .menu-topo .user {
+    display: flex;
+    align-items: center;
+}
+
+.base-topo .menu-topo .user a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.base-topo .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #860813;
+    padding: 16px;
+    border-radius: 0 0 5px 5px;
+}
+
+.base-homes {
+    min-height: calc(100vh - 135px);
+}
+
+.caixas {
+    width: 100%;
+    float: left;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #362f2f;
+    box-shadow: 0px 2px 3px 0 #c1c1c1;
+    -webkit-box-shadow: 0px 2px 3px 0 #c1c1c1;
+    -moz-box-shadow: 0px 2px 3px 0 #c1c1c1;
+    -o-box-shadow: 0px 2px 3px 0 #c1c1c1;
+    padding: 20px 20px;
+}
+
+.v-desempenho {
+    width: 100%;
+    float: left;
+}
+
+.base-topo .menu-topo .nomes {
+    display: block;
+    position: relative;
+    margin-right: 12px;
+}
+
+.base-home .conteudo .caixa-home {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.base-home .caixa {
+    /* background-color: #fff;
+    border-radius: 5px;
+    padding: 16px 0 16px 16px;
+    box-shadow: 0 0 5px #ccc;
+    margin-bottom: 12px;
+    margin-left: 21px; */
+
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 13px 69px 23px 47px;
+    box-shadow: 0 0 5px #ccc;
+    margin-bottom: 12px;
+    position: absolute;
+    display: block;
+    left: 1365px;
+    border: solid 1px #860813;
+}
+
+.base-home .caixa h2 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.base-home .caixa h2::before,
+.base-home .caixa h2::after {
+    content: "";
+    width: 10%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 12px;
+}
+
+.caixa-border {
+    margin-top: 50px;
+    border-bottom: 1px solid #860813;
+    padding: 12px 12px;
+    margin-left: -16px;
+}
+
+.base-home .caixa .base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 46px;
+    
+}
+
+.base-home .caixa .base .icone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #860813;
+    width: 100px;
+    padding: 3px;
+    border: 1px solid #860813;
+    display: block;
+    margin-right: 12px;
+}
+
+.base-home .caixa .base .texto {
+    width: 100%;
+    margin-left: 12px;
+}
+
+.base-home .caixa .base .texto .nome {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.base-home .caixa .base .texto .email {
+    font-size: 16px;
+    font-style: italic;
+    display: block;
+}
+
+.base-home .caixa .base .texto h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.base-home .caixa .base .texto p {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.base-home .caixa button  {
+    background-color: #860813;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 6px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 178px;
+    left: -12px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.base-home .tabela-top {
+    margin-top: -659px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    margin-left: -444px;
+    width: 491px;
+}
+
+.base-home .caixa-tabela {
+    width: 100%;
+    margin-bottom: 16px;
+    margin-left: 25px;
+}
+
+.base-home .caixa-tabela table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.base-home .caixa-tabela table thead {
+    background-color: #860813;
+    color: #fff;
+}
+
+.base-home .caixa-tabela table thead th {
+    padding: 12px;
+    text-align: left;
+}
+
+.base-home .caixa-tabela table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.base-home .caixa-tabela table tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.base-home .caixa-tabela table tbody td {
+    padding: 12px;
+    text-align: left;
+}
+
+.base-home .caixa-tabela table tbody td a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color: #860813;
+    border-radius: 4px;
+}
+
+.base-home .caixa-tabela table tbody td a:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+
+
+.base-home .caixa .base button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.caixa-webcam {
+    width: 100%;
+    margin-bottom: 16px;
+    margin-left: -150px;
+}
+
+.base-home .caixa-webcam {
+    /* background-color: #fff;
+    border-radius: 5px;
+    padding: 16px 0 16px 16px;
+    box-shadow: 0 0 5px #ccc;
+    margin-bottom: 12px;
+    width: 1335px;
+    background-color: #860813;
+    margin-left: 144px; */
+
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 16px 0 16px 16px;
+    box-shadow: 0 0 5px #ccc;
+    margin-bottom: 12px;
+    width: 1335px;
+    background-color: #860813;
+    margin-left: 319px;
+}
+
+.base-home .caixa-webcam button {
+    background-color: #860813;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 150px;
+    left: -12px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.base-home .caixa-webcam button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.base-home .botoes {
+    display: grid;
+    grid-template-columns: repeat(6, 16.8%);
+}
+
+.caixa-botoes-center {
+    background-color: #860813;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin: 30px 30px;
+}
+
+.base-home .caixa-webcam button .img-fluido {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #860813;
+    width: 10px;
+    padding: 3px;
+    border: 1px solid #860813;
+    display: block;
+    margin-right: 12px;
+}
+
+.base-home .caixa-webcam h2 {
+    font-weight: bold;
+    margin-bottom: 8px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.base-home .caixa-webcam h2::before,
+.base-home .caixa-webcam h2::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 12px;
+}
+
+.base-home .caixa-webcam h2:hover::before,
+.base-home .caixa-webcam h2:hover::after {
+    background-color: #860813;
+}
+
+.base-home .caixa-webcam .base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.base-home .caixa-webcam .caixa-video video {
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #860813;
+    padding: 3px;
+    border: 1px solid #fff;
+    display: block;
+    margin-right: 12px;
+}
+
+.base-home .caixa-webcam .caixa-video video .camera,
+.base-home .caixa-webcam .caixa-video video .subcamera {
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #860813;
+    padding: 3px;
+    border: 1px solid #860813;
+    display: block;
+    margin-right: 12px;
+}
+
+
+.base-home .base-caixa .caixa-chat {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 16px 0 16px 16px;
+    box-shadow: 0 0 5px #ccc;
+    margin-bottom: 12px;
+    width: 1303px;
+    background-color: #860813;
+}
+
+.base-home .base-caixa .caixa-chat h2 {
+    font-weight: bold;
+    margin-bottom: 8px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.caixa-chat .caixa-mensagens .mensagem-aluno {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 16px 0 16px 16px;
+    box-shadow: 0 0 5px #ccc;
+    margin-bottom: 12px;
+    width: 1269px;
+    background-color: #860813;
+}
+
+.caixa-chat .caixa-mensagens .mensagem-aluno .thumb-aluno {
+    display: block;
+    height: 49px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.caixa-chat .caixa-mensagens .mensagem-aluno .thumb-aluno img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #860813;
+    padding: 3px;
+    display: block;
+    margin-right: 12px;
+}
+
+.caixa-chat .caixa-mensagens .mensagem-aluno .texto {
+    width: 100%;
+    margin-left: 52px;
+    display: block;
+    position: relative;
+    margin-top: -31px;
+}
+
+.caixa-chat .caixa-mensagens .mensagem-aluno .texto small {
+    padding: 8px;
+    font-family: Arial;
+    border-radius: 50px;
+    background-color: #1b0147;
+}
+
+.caixa-chat .caixa-mensagens .mensagem-aluno .texto .nome,
+.caixa-chat .caixa-mensagens .mensagem-aluno .texto .data {
+    font-size: 16px;
+    font-family: Arial;
+    display: contents;
+
+}
+
+.caixa-chat .caixa-mensagens .mensagem-aluno .texto p {
+    font-size: 16px;
+    font-family: Arial;
+    font-style: italic;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    background-color: #ccc;
+    color: #000;
+    padding: 11px 6px 13px 4px;
+    margin-left: -5px;
+    margin-right: 74px;
+    border-radius: 10px
+}
+
+/* admin */
+
+.caixa-chat .caixa-mensagens .admin {
+    display: flex;
+    justify-content: ;
+} 
+
+.caixa-chat .caixa-mensagens .mensagem-admin {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 16px 0 16px 16px;
+    box-shadow: 0 0 5px #ccc;
+    margin-bottom: 12px;
+    width: 1269px;
+    background-color: #860813;
+}
+
+.caixa-chat .caixa-mensagens .mensagem-admin .thumb-admin {
+    display: block;
+    height: 49px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    left: 1181px;
+    position: relative;
+}
+
+.caixa-chat .caixa-mensagens .mensagem-admin .texto small {
+    font-style: italic;
+    padding: 8px;
+    border-radius: 50px;
+    background-color: #000000;
+}
+
+.caixa-chat .caixa-mensagens .mensagem-admin .thumb-admin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #860813;
+    padding: 3px;
+    border: 1px solid #fff;
+    display: block;
+    margin-right: 12px;
+}
+
+.caixa-chat .caixa-mensagens .mensagem-admin .texto {
+    width: 100%;
+    margin-left: 860px;
+    display: block;
+    position: relative;
+    margin-top: -31px;
+}
+
+.caixa-chat .caixa-mensagens .mensagem-admin .texto .nome,
+.caixa-chat .caixa-mensagens .mensagem-admin .texto .data {
+    font-size: 16px;
+    font-style: italic;
+    display: contents;
+
+}
+
+.caixa-chat .caixa-mensagens .mensagem-admin .texto p {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    left: -187px;
+    display: block;
+    position: relative;
+}
+
+/* admim fim */
+
+.caixa-chat .caixa-textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 12px;
+    position: relative;
+    width: 97%;
+}
+
+.caixa-chat .caixa-textarea h2 {
+    font-weight: bold;
+    margin-bottom: 8px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.caixa-chat .caixa-textarea textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    resize: none;
+}
+
+.caixa-chat .caixa-textarea .botoes-enviar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+}
+
+
+.caixa-chat .caixa-textarea .botoes-enviar button {
+    background-color: #860813;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 150px;
+    left: -12px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.caixa-chat .caixa-textarea .botoes-enviar button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
