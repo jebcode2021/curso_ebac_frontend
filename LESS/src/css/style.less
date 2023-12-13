@@ -4,20 +4,24 @@
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
 
-.margin-bottom8 {
+.marginBottom8 {
     margin-bottom: 8px;
 }
 
-.margin-bottom16 {
+.marginBottom16 {
     margin-bottom: 16px;
 }
 
-.margin-top32 {
-    margin-top: 32px;
+.marginTop18 {
+    margin-top: 18px;
 }
 
-.margin-top24 {
+.marginTop24 {
     margin-top: 24px;
+}
+
+.marginTop32 {
+    margin-top: 32px;
 }
 
 .textoAlignCenter {
@@ -137,7 +141,11 @@
 }
 
 .height100vh {
-    height: 100vh;
+    height: 120vh;
+}
+
+.height120vh {
+    height: 120vh;
 }
 
 .height200 {
@@ -167,6 +175,21 @@
     font-family: @fontePrincipal;
 }
 
+::-webkit-scrollbar {
+    width:7px; 
+    height:7px;
+}
+
+::-webkit-scrollbar-thumb { 
+    background:#860813;
+    border-radius:5px;
+}
+
+::-webkit-scrollbar-track { 
+    background:#444;
+}
+
+
 body {
     background-color: #colors[backgroundColorVermelho];
     color: #colors[textColorBranco];
@@ -180,10 +203,6 @@ li {
     .maxWidth960;
     .width100;
     .marginZeroAuto;
-    .height100vh;
-    .displayFlex;
-    .flexDirectionColumn;
-    .justifyContentCenter;
 
     @media @breakpointMobile {
         .maxWidth70;
@@ -203,6 +222,7 @@ header {
         .bordaRadius50;
         .width200;
         .height200;
+        .marginTop18;
         border: 3px solid @corBordaBranco;
     }
 }
@@ -212,12 +232,12 @@ header {
 
     &-name {
         .fonteSize16;
-        .margin-bottom8
+        .marginBottom8
     }
 
     &-subtitle {
         .fonteSize14;
-        .margin-bottom8
+        .marginBottom8
     }
 
     &-description {
@@ -232,7 +252,7 @@ header {
     .maxWidth240;
     .width100;
     .marginZeroAuto;
-    .margin-top24;
+    .marginTop24;
 
     & li {
         .listStyleNone;
@@ -249,7 +269,7 @@ header {
 
 .projects-list {
 
-    .margin-top32;
+    .marginTop32;
 
     &-item {
 
@@ -258,7 +278,7 @@ header {
             .displayBlock;
             .padding1620;
             .bordaRadius30;
-            .margin-bottom16;
+            .marginBottom16;
             .textoAlignCenter;
             .textoBold;
             background-color: #colors[buttonColorBranco];
