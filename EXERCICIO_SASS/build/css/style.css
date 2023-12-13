@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* Fontes */
+/* Cores */
+/* Cores de texto */
+/* Cores de botões */
+/* mobile */
+/* tablet */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #860813;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #444;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #860813;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+header .container .branding {
+  display: flex;
+  align-items: center;
+}
+header .container .branding img {
+  width: 100px;
+  margin-right: 16px;
+  border-radius: 5%;
+}
+
+.menu {
+  display: flex;
+}
+.menu li {
+  font-weight: bold;
+  margin-left: 24px;
+}
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu li a:hover {
+  color: #44bd32;
+}
+
+section {
+  padding: 56px 0;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+section h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #860813;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+}
+.products .product-item {
+  padding: 16px;
+  border-radius: 16px;
+  border-color: #44bd32;
+  border-style: solid;
+  border-width: 1px;
+}
+.products .product-item h4 {
+  margin-top: 8px;
+  text-align: center;
+}
+.products .product-item p {
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+.products .product-item img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  border-color: #860813;
+  border-style: solid;
+  border-width: 1px;
+}
+.products .product-button {
+  display: block;
+  background-color: #860813;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+.products .product-button:hover {
+  background-color: #c05448;
+}
+
+footer {
+  background-color: #860813;
+  padding: 16px 0;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+  .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .products {
+    display: block;
+  }
+  .product-item {
+    margin-bottom: 32px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

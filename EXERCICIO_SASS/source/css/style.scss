@@ -1,0 +1,163 @@
+@use '../config/reset';
+@use '../config/variaveis';
+
+body {
+    background-color: variaveis.$corFundo;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: variaveis.$corFundoRed;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+
+        & .branding {
+            display: flex;
+            align-items: center;
+
+            & img {
+                width: 100px;
+                margin-right: 16px;
+                border-radius: 5%;
+            }
+
+        }
+    }
+}
+
+.menu {
+    display: flex;
+
+    & li {
+        font-weight: bold;
+        margin-left: 24px;
+
+        & a {
+            color: variaveis.$corTextoBranco;
+            text-decoration: none;
+
+            &:hover {
+                color: variaveis.$corFundoGreen;
+            }
+        }
+    }
+}
+
+section {
+    padding: 56px 0;
+
+    & h2 {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    & h2::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 4px;
+        background-color: variaveis.$corFundoRed;
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+}
+
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+
+    .product-item {
+        padding: 16px;
+        border-radius: 16px;
+        border-color: variaveis.$corFundoGreen;
+        border-style: solid;
+        border-width: 1px;
+
+        & h4 {
+            margin-top: 8px;
+            text-align: center;
+        }
+
+        & p {
+            margin-top: 8px;
+            margin-bottom: 10px;
+        }
+
+        & img {
+            width: 100%;
+            border-radius: 16px;
+            margin-bottom: 10px;
+            border-color: variaveis.$corFundoRed;
+            border-style: solid;
+            border-width: 1px;
+        }
+    }
+
+    .product-button {
+        display: block;
+        background-color: variaveis.$corBotaoRed;
+        color: variaveis.$corTextoBranco;
+        text-align: center;
+        padding: 8px 0;
+        border-radius: 8px;
+        margin-top: 8px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: variaveis.$corBotaoRedHover;
+        }
+    }
+
+}
+
+footer {
+    background-color: variaveis.$corFundoRed;
+    padding: 16px 0;
+
+    & p {
+        color: variaveis.$corTextoBranco;
+        text-align: center;;
+    }
+}
+
+
+@media screen and (max-width: variaveis.$tablet) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: variaveis.$mobile) {
+    .products {
+        display: block;
+    }
+
+    .product-item {
+        margin-bottom: 32px;
+    }
+}

@@ -1,0 +1,22 @@
+@use '../config/variaveis';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: variaveis.$fontPrincipal;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: variaveis.$corFundoScrollbarThumdRed; // cor do scroll
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: variaveis.$corFundoScrollTrack; // cor do fundo do scroll
+}
