@@ -1,0 +1,15 @@
+npm install --global typescript
+
+npx tsc --init
+
+npx tsc
+
+npx tsc --watch
+
+"public": Acessível em todos os lugares.
+
+"private": Acessível apenas dentro da classe.
+
+"protected": Acessível dentro da classe e das classes herdeiras.
+
+"static": Acessível apenas pelo nome da classe, não na instância
