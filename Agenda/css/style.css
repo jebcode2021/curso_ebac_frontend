@@ -10,7 +10,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #860813;
+    background: #005593;
     border-radius: 5px;
 }
 
@@ -26,9 +26,9 @@ ol {
 }
 
 .base-topo {
-    background-color: #860813;
+    background-color: #005593;
     padding: 16px 0 0;
-    border-bottom: 1px solid #860813;
+    border-bottom: 1px solid #005593;
     color: #fff;
     margin-bottom: 56px;
 }
@@ -94,7 +94,7 @@ ol {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #860813;
+    background-color: #005593;
     padding: 16px;
     border-radius: 0 0 5px 5px;
 }
@@ -150,7 +150,7 @@ ol {
     position: absolute;
     display: block;
     left: 1365px;
-    border: solid 1px #860813;
+    border: solid 1px #005593;
 }
 
 .base-home .caixa h2 {
@@ -175,7 +175,7 @@ ol {
 
 .caixa-border {
     margin-top: 50px;
-    border-bottom: 1px solid #860813;
+    border-bottom: 1px solid #005593;
     padding: 12px 12px;
     margin-left: -16px;
 }
@@ -194,10 +194,10 @@ ol {
     object-fit: cover;
     border-radius: 50%;
     overflow: hidden;
-    background-color: #860813;
+    background-color: #005593;
     width: 100px;
     padding: 3px;
-    border: 1px solid #860813;
+    border: 1px solid #005593;
     display: block;
     margin-right: 12px;
 }
@@ -233,7 +233,7 @@ ol {
 }
 
 .base-home .caixa button  {
-    background-color: #860813;
+    background-color: #005593;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -271,7 +271,7 @@ ol {
 }
 
 .base-home .caixa-tabela table thead {
-    background-color: #860813;
+    background-color: #005593;
     color: #fff;
 }
 
@@ -297,7 +297,7 @@ ol {
     color: #fff;
     text-decoration: none;
     padding: 10px 10px;
-    background-color: #860813;
+    background-color: #005593;
     border-radius: 4px;
 }
 
@@ -328,7 +328,7 @@ ol {
     box-shadow: 0 0 5px #ccc;
     margin-bottom: 12px;
     width: 1335px;
-    background-color: #860813;
+    background-color: #005593;
     margin-left: 144px; */
 
     background-color: #fff;
@@ -337,12 +337,12 @@ ol {
     box-shadow: 0 0 5px #ccc;
     margin-bottom: 12px;
     width: 1335px;
-    background-color: #860813;
+    background-color: #005593;
     margin-left: 319px;
 }
 
 .base-home .caixa-webcam button {
-    background-color: #860813;
+    background-color: #005593;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -369,7 +369,7 @@ ol {
 }
 
 .caixa-botoes-center {
-    background-color: #860813;
+    background-color: #005593;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -387,10 +387,10 @@ ol {
     object-fit: cover;
     border-radius: 50%;
     overflow: hidden;
-    background-color: #860813;
+    background-color: #005593;
     width: 10px;
     padding: 3px;
-    border: 1px solid #860813;
+    border: 1px solid #005593;
     display: block;
     margin-right: 12px;
 }
@@ -419,7 +419,7 @@ ol {
 
 .base-home .caixa-webcam h2:hover::before,
 .base-home .caixa-webcam h2:hover::after {
-    background-color: #860813;
+    background-color: #005593;
 }
 
 .base-home .caixa-webcam .base {
@@ -432,7 +432,7 @@ ol {
 .base-home .caixa-webcam .caixa-video video {
     border-radius: 50px;
     overflow: hidden;
-    background-color: #860813;
+    background-color: #005593;
     padding: 3px;
     border: 1px solid #fff;
     display: block;
@@ -443,9 +443,9 @@ ol {
 .base-home .caixa-webcam .caixa-video video .subcamera {
     border-radius: 5px;
     overflow: hidden;
-    background-color: #860813;
+    background-color: #005593;
     padding: 3px;
-    border: 1px solid #860813;
+    border: 1px solid #005593;
     display: block;
     margin-right: 12px;
 }
@@ -458,7 +458,7 @@ ol {
     box-shadow: 0 0 5px #ccc;
     margin-bottom: 12px;
     width: 1303px;
-    background-color: #860813;
+    background-color: #005593;
 }
 
 .base-home .base-caixa .caixa-chat h2 {
@@ -481,7 +481,7 @@ ol {
     box-shadow: 0 0 5px #ccc;
     margin-bottom: 12px;
     width: 1269px;
-    background-color: #860813;
+    background-color: #005593;
 }
 
 .caixa-chat .caixa-mensagens .mensagem-aluno .thumb-aluno {
@@ -498,7 +498,7 @@ ol {
     object-fit: cover;
     border-radius: 50%;
     overflow: hidden;
-    background-color: #860813;
+    background-color: #005593;
     padding: 3px;
     display: block;
     margin-right: 12px;
@@ -555,7 +555,7 @@ ol {
     box-shadow: 0 0 5px #ccc;
     margin-bottom: 12px;
     width: 1269px;
-    background-color: #860813;
+    background-color: #005593;
 }
 
 .caixa-chat .caixa-mensagens .mensagem-admin .thumb-admin {
@@ -582,7 +582,7 @@ ol {
     object-fit: cover;
     border-radius: 50%;
     overflow: hidden;
-    background-color: #860813;
+    background-color: #005593;
     padding: 3px;
     border: 1px solid #fff;
     display: block;
@@ -661,7 +661,7 @@ ol {
 
 
 .caixa-chat .caixa-textarea .botoes-enviar button {
-    background-color: #860813;
+    background-color: #005593;
     color: #fff;
     border: none;
     border-radius: 4px;

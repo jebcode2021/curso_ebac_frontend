@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avançado Bootstrap </title>
+    <link rel="stylesheet" href="lib/css/style.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header id="cabecalho">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">Avançado Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao"
+                aria-controls="menu-navegacao" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio"> <i class="fas fa-home"></i> Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#imagem"> <i class="fas fa-image"></i> Imagem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato"> <i class="fas fa-envelope"></i> Contato</a>
+                    </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#login"> <i class="fas fa-sign-in-alt"></i> Login</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <button id="btnMensagem" type="button" class="btn btn-warning position-relative">
+                <i class="fas fa-envelope"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+10 <span class="visually-hidden">unread messages</span></span>
+              </button>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <section id="inicio">
+                <h1 class="text-center">Bootstrap Cards</h1>
+                <div class="mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-4 mt-2">
+                            <article class="card text-bg-dark h-100">
+                                <header class="card-header">
+                                    Desenvolvimento Web
+                                </header>
+                                <img src="https://roimine.com/wp-content/uploads/2021/06/Confira-a-importancia-de-ter-um-site-otimizado-para-mobile.jpg"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Desenvolvimento Web</h4>
+                                    <p class="card-text">
+                                        Desenvolvimento Web é uma área de atuação que envolve a criação de sites.
+                                    </p>
+                                    <a href="#"
+                                        class="btn btn-primary position-relative top-0 start-50 translate-middle-x">Leia
+                                        mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postando em <time>07/12/2023</time>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-md-4 mt-2">
+                            <article class="card text-bg-primary h-100">
+                                <header class="card-header">
+                                    Desenvolvimento Mobile
+                                </header>
+                                <img src="https://coodesh.com/blog/wp-content/uploads/2020/11/mobile-developer-skills-1152x648.jpg"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Desenvolvimento Mobile</h4>
+                                    <p class="card-text">
+                                        Desenvolvimento Mobile é uma área de atuação que envolve a criação de
+                                        aplicativos.
+                                    </p>
+                                    <a href="#"
+                                        class="btn btn-dark position-relative top-0 start-50 translate-middle-x">Leia
+                                        mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    Postando em <time>07/12/2023</time>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div class="col-md-4 mt-2">
+                            <article class="card text-bg-warning h-100">
+                                <header class="card-header">
+                                    Desenvolvimento Desktop
+                                </header>
+                                <img src="https://www.shutterstock.com/image-vector/web-development-coding-programming-responsive-600nw-1449924503.jpg"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Desenvolvimento Desktop</h4>
+                                    <p class="card-text">
+                                        Desenvolvimento Desktop é uma área de atuação que envolve a criação de
+                                        softwares.
+                                    </p>
+                                    <a href="#"
+                                        class="btn btn-success position-relative top-0 start-50 translate-middle-x">Leia
+                                        mais</a>
+
+                                </div>
+                                <footer class="card-footer">
+                                    Postando em <time>07/12/2023</time>
+                                </footer>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="imagem">
+                <div class="container">
+                   <div class="carousel slide" id="carousel-produtos" data-bs-ride="carousel">
+                    <h2 class="text-center mb-5"> Carousel de imagens</h2>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://roimine.com/wp-content/uploads/2021/06/Confira-a-importancia-de-ter-um-site-otimizado-para-mobile.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://coodesh.com/blog/wp-content/uploads/2020/11/mobile-developer-skills-1152x648.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.shutterstock.com/image-vector/web-development-coding-programming-responsive-600nw-1449924503.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-produtos"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-produtos"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-produtos" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel-produtos" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel-produtos" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+
+                        </div>
+
+                   </div>
+                </div>
+            </section>
+            <section id="contato">
+                <div class="container mt-5">
+                    <div class="row mt-5">
+                        <div class="col border border-1 p-3">
+                            <h2 class="text-center mb-5">Entre em contato</h2>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="nome" class="form-label mt-2">Nome</label>
+                                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label mt-2">E-mail</label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Digite seu e-mail">
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <label for="telefone" class="form-label mt-2">Telefone</label>
+                                        <input type="text" class="form-control" id="telefone"
+                                            placeholder="Digite seu telefone">
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <label for="sexo" class="form-label mt-2">Sexo</label>
+                                        <select class="form-select" id="sexo">
+                                            <option selected>Escolha um sexo</option>
+                                            <option value="1">Masculino</option>
+                                            <option value="2">Feminino</option>
+                                            <option value="3">Outro</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <label for="assunto" class="form-label mt-2">Assunto</label>
+                                        <select class="form-select" id="assunto">
+                                            <option selected>Escolha um assunto</option>
+                                            <option value="1">Dúvida</option>
+                                            <option value="2">Elogio</option>
+                                            <option value="3">Reclamação</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label for="mensagem" class="form-label mt-2">Mensagem</label>
+                                        <textarea class="form-control" id="mensagem" rows="3"></textarea>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-check form-switch mt-2">
+                                            <label class="form-label" for="aceito-termos">Aceito os termos</label>
+                                            <input class="form-check-input" type="checkbox" value="" id="aceito-termos">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 text-center mt-3">
+                                        <button type="submit" class="btn btn-primary"> <i
+                                                class="fas fa-paper-plane"></i> Enviar</button>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 mt-3">
+                                        <div class="alert alert-success">
+                                            <i class="fas fa-check-circle"></i>
+                                            <strong>Sucesso!</strong> Sua mensagem foi enviada com sucesso.
+                                        </div>
+
+                                        <div class="alert alert-danger">
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <strong>Erro!</strong> Ocorreu um erro ao enviar sua mensagem.
+                                        </div>
+
+                                        <div class="alert alert-warning">
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                            <strong>Atenção!</strong> Você precisa aceitar os termos de uso.
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <div class="toast-container position-fixed bottom-0 mb-2 end-0 p-3">
+            <div class="toast" id="mensagens-alerta">
+                <header class="toast-header">
+                    <strong class="me-auto">Importante</strong>
+                </header>
+                <div class="toast-body">
+                    Você possui 10 mensagens não lidas
+                    <div class="mt-2 pt-2 border-top">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-envelope"></i>
+                            Ver mensagens
+                        </button>
+
+                        <button data-bs-dismiss="toast" class="btn btn-danger" type="button">
+                            <i class="fas fa-times"></i>
+                            Descartar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="lib/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const ativadorToast = document.getElementById('btnMensagem');
+        const mensagem = (document.getElementById('mensagens-alerta'));
+
+        if (ativadorToast) {
+            ativadorToast.addEventListener('click', () => {
+                const toast = new bootstrap.Toast(mensagem);
+                toast.show();
+            });
+        }
+    </script>
+
+</body>
+
+</html>
